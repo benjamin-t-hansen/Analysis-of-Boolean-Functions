@@ -15,7 +15,7 @@ def Maj(ary):
   return np.sign(sum(ary))
 
 
-def Dic(ary,i):
+def Dic(ary, i):
   '''Dictator Function: Returns the value in the i-th position (0-indexed) of a
   [-1,1] valued array.  
   
@@ -45,7 +45,7 @@ def Lin(ary,weights, bias = 0):
     0  if x_1 * w_1 + ... + x_n * w_n + b = 0 
     1  if x_1 * w_1 + ... + x_n * w_n + b > 0 
   '''
-  return np.sign(np.dot(ary,weights)+bias)
+  return int(np.sign(np.dot(ary,weights) + bias))
 
 
 def Tribes(ary, w = 2):

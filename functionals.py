@@ -21,14 +21,11 @@ def inner_prod(fun1,fun2,n):
   to Definition 1.3.
 
   Args:
-    fun: function on [-1,1] valued numpy.array 
-    bit_string_sample: [-1,1] valued ndarray with each input given along the first
-    axis.
-    n: dimension of input (As the functions above do not specify dimension)
+    fun1, fun2: function on [-1,1] valued numpy.array 
+    n: dimension of input
   
   Returns:
-    A numpy.array where the i-th value is given by the evaluation of the function
-    on the i-th sample. 
+    np.float
   '''
   
   bit_string_pop = bit_strings.gen_bit_strings(n)
@@ -37,5 +34,15 @@ def inner_prod(fun1,fun2,n):
   return 2 ** (-n) * np.dot(fun1_v, fun2_v)
 
 def relative_hamming_dist(fun1,fun2, n):
+  '''Computes the relative Hamming distance (Definition 1.10) between two functions
+  using Proposition 1.9. P(f(x) != g(x)) 
+  
+  Args:
+    fun1, fun2 : function on [-1,1] valued numpy.array 
+    n: dimension of input 
+    
+  Returns:
+    np.float
+  '''  
   return (1- inner_prod(fun1,fun2,n))/2
 
