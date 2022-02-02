@@ -66,3 +66,25 @@ def Tribes(ary, w = 2):
   vote_outcome = np.any(np.all(ndary, axis =1)) 
   #inner all checks if all members of a tribe voted 1 
   return 2* vote_outcome - 1 #function range is {-1,1}
+
+
+
+def Basis(ary, S):
+  '''Orthonormal basis of parity function: For a [-1,1] valued array and a 
+  [-1,1] valued array S, multiply together all values of array with associated 
+  value of S equal to 1.
+  
+  Args:
+    ary: [-1,1] valued numpy.array
+    S: [-1,1] valued numpy.array S[i] = 1 iff i is in the set "S"
+    (Note: require len(ary) = len(S) )
+
+  Returns:
+    A numpy.float64 with value from the list [-1, 1]
+  '''
+
+  subset = np.array([x for (x,s) in zip(ary,S) if s == 1 ])
+  return np.prod(subset)
+
+
+
