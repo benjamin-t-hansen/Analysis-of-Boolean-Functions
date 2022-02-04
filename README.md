@@ -1,5 +1,5 @@
 # Analysis of Boolean Functions
- This repository is designed to implement some aspects of the book (Analysis of Boolean Function)[https://arxiv.org/abs/2105.10386] by Ryan O’Donnell
+ This repository is designed to implement some aspects of the book (https://arxiv.org/abs/2105.10386)[Analysis of Boolean Functions] by Ryan O’Donnell.
 
 README.md
 Initial commit
