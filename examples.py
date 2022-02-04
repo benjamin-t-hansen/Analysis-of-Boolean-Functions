@@ -8,7 +8,6 @@ import functionals
 
 #Compute majority, a linear threshold function, tribes, basis
 
-
 vote_1 = np.array([-1,1,1,-1,1])
 outcome_1 = boolean_functions.Maj(vote_1)
 outcome_2 = boolean_functions.Lin(vote_1,np.array([.8,0,-1,.6,.5]))
@@ -39,4 +38,4 @@ h = learning.low_deg_algorithm(f, n = 5, delta = .2, epsilon = .3, is_monotone =
 #compute the distance between the two functions
 dist = functionals.relative_hamming_dist(f, h, n= 5)
 
-print(dist) #random but should be near zero.
+print(dist) #random but should be near zero. 

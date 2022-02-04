@@ -4,7 +4,7 @@ import functionals
 import bit_strings
 
 def get_chernoff_sample_size(delta, epsilon):
-  '''Calculates the number of samples needed to estimate Fourier coefficents to
+  '''Calculates the number of samples needed to estimate Fourier coefficients to
   an accuracy of epsilon with a probability at least delta. 
   Based on the multiplicative Chernoff bound:
    (basis*f+1)/2 is a Bernoulli random variable.  For example use 
@@ -29,10 +29,10 @@ def get_chernoff_sample_size(delta, epsilon):
   return n_samples
 
 def get_fourier_transform_est(fun, n, S_pop = None, n_samples = None, delta = None, epsilon = None):
-  ''' Computes the estimated Fourier coefficent for for all Basis functions associated 
+  ''' Computes the estimated Fourier coefficient for for all Basis functions associated 
   to an element of S_pop.  If n_samples is not specified, delta and epsilon must
-  be specified to estimate the Fourier coefficents to an accuracy of epsilon with 
-  a probability at least delta.  The value of the function fun is caculated only 
+  be specified to estimate the Fourier coefficients to an accuracy of epsilon with 
+  a probability at least delta.  The value of the function fun is calculated only 
   once per sample.
   
   Computational bottleneck.  Goal to implement Walsh–Hadamard Transform.

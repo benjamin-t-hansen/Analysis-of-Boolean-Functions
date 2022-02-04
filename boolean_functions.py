@@ -14,7 +14,6 @@ def Maj(ary):
   '''
   return np.sign(sum(ary))
 
-
 def Dic(ary, i):
   '''Dictator Function: Returns the value in the i-th position (0-indexed) of a
   [-1,1] valued array.  

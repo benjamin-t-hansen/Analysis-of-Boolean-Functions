@@ -45,4 +45,3 @@ def relative_hamming_dist(fun1,fun2, n):
     np.float
   '''  
   return (1- inner_prod(fun1,fun2,n))/2
-

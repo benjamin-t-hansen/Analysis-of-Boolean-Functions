@@ -36,3 +36,4 @@ def get_fourier_transform(fun,n):
   for index, S in enumerate(S_pop):
     transform[index] = get_fourier(fun,S)
   return transform
+

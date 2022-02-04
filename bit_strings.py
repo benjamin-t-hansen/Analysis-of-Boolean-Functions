@@ -36,11 +36,6 @@ def gen_bit_strings(n):
 
 
 
-
-
-
-
-
 def S_deg(n,deg):
   '''Generates numpy ndarray containing all possible [-1,1] valued arrays with 
   exactly deg ones. Each array is given along the first axis. 
