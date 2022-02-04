@@ -32,11 +32,11 @@ fte = fourier_estimation.get_fourier_transform_est(boolean_functions.Maj, n = 7,
 print(ft)
 print(fte)
 
-
+#estimate f by h by repeated samples and the low deg algorithm
 f = lambda x: boolean_functions.Lin(x,np.array([.8,0,1,.6,.5]))
 h = learning.low_deg_algorithm(f, n = 5, delta = .2, epsilon = .3, is_monotone = True)
 
-
+#compute the distance between the two functions
 dist = functionals.relative_hamming_dist(f, h, n= 5)
 
 print(dist) #random but should be near zero.
