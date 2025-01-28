@@ -4,11 +4,12 @@ import boolean_functions
 import bit_strings
 
 
+
 def learning_algorithm_A(fun, S_pop, delta, epsilon):
   '''Determines every Fourier coefficient associated to an element of S_pop to 
   a high degree of accuracy with high probability.  Using these coefficient values,
   the function can be approximated to a relative Hamming distance of epsilon with
-  probability at least 1- delta.
+  probability at least 1- delta..
   
   Args:
     fun: function on [-1,1] valued numpy.array (Boolean function)
