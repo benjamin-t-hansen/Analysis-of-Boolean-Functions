@@ -1,7 +1,6 @@
 import numpy as np
 
 
-
 class Memoize:
     def __init__(self, f):
         self.f = f
